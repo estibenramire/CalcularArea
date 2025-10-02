@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace CalcularArea
 {
-    internal class Poligono : Forma
+    public abstract class Poligono : Forma2D
     {
         public int _numeroLados;
-        public int _base;
-        public int _altura;
+        //public int _base;
+        //public int _altura;
+        //, int basePoligono, int altura
 
-    
-        public Poligono(int numeroLados, int basePoligono, int altura) 
+
+
+        public Poligono(int numeroLados) 
         {
             _numeroLados = numeroLados;
-            _base = basePoligono;
-            _altura = altura;
+            //_base = basePoligono;
+            //_altura = altura;
         }
 
     
-       
     }
 }

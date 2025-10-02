@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Diagrama.cs" />
-    <Compile Include="Forma.cs" />
+    <Compile Include="Forma2D.cs" />
     <Compile Include="Formas\Circulo.cs" />
     <Compile Include="Formas\Cuadrado.cs" />
     <Compile Include="Formas\Elipse.cs" />

@@ -12,6 +12,22 @@ namespace CalcularArea
         static void Main(string[] args)
         {
 
+            // Crear un diagrama y agregar formas
+            Diagrama diagrama = new Diagrama();
+
+            diagrama.AddForma(new Circulo(5));
+            Console.WriteLine("Área total: " + diagrama.GetTotalArea());
+            Console.WriteLine("Perímetro total: " + diagrama.GetTotalPerimeter());
+            diagrama.AddForma(new Circulo(3));
+            Console.WriteLine("Área total: " + diagrama.GetTotalArea());
+            Console.WriteLine("Perímetro total: " + diagrama.GetTotalPerimeter());
+            diagrama.AddForma(new Elipse(4, 6));
+            diagrama.AddForma(new Rectangulo(4, 6));
+
+            Console.WriteLine("Área total: " + diagrama.GetTotalArea());
+            Console.WriteLine("Perímetro total: " + diagrama.GetTotalPerimeter());
+
+            /**
             Console.WriteLine("Cálculo de Rectángulo");
             Rectangulo rectangulo = new Rectangulo(4, 6);
             Console.WriteLine($"El área del rectángulo es: {rectangulo.GetArea()}");
@@ -37,6 +53,7 @@ namespace CalcularArea
             Console.WriteLine("Cálculo de Triángulo");
             Triangulo triangulo = new Triangulo(4, 6);
             Console.WriteLine($"El área del triángulo es: {triangulo.CalcularArea()}");
+            **/
 
 
         }

@@ -8,13 +8,24 @@ namespace CalcularArea.Formas
 {
     internal class Rectangulo : Poligono
     {
-        public Rectangulo(int baseRectangulo, int altura):base(4, baseRectangulo, altura)
+        private int _base;
+        private int _altura;
+
+        public int Base { get => _base; set => _base = value; }
+        public int Altura { get => _altura; set => _altura = value; }
+
+        public Rectangulo(int baseRectangulo, int altura):base(4)
         {
         }
 
-        public int GetArea()
+        public override double GetArea()
         {
-            return _base * _altura;
+            return Base * Altura;
+        }
+
+        public override double GetPerimeter()
+        {
+            return 2 * (Base + Altura);
         }
     }
 }

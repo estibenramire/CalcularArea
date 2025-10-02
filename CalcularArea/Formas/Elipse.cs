@@ -6,19 +6,29 @@ using System.Threading.Tasks;
 
 namespace CalcularArea.Formas
 {
-    internal class Elipse: Forma
+    internal class Elipse : Forma2D
     {
-        public double _radioMayor;
-        public double _radioMenor;
-   
+        private double _radioMayor;
+        private double _radioMenor;
+
+        public double RadioMayor { get => _radioMayor; set => _radioMayor = value; }
+        public double RadioMenor { get => _radioMenor; set => _radioMenor = value; }
         public Elipse(double radioMayor, double radioMenor)
         {
-            _radioMayor = radioMayor;
-            _radioMenor = radioMenor;
+            RadioMayor = radioMayor;
+            RadioMenor = radioMenor;
         }
-        public double GetArea()
+
+       
+
+        public override double GetArea()
         {
-            return Math.PI * _radioMayor * _radioMenor;
+            return Math.PI * RadioMayor * RadioMenor;
+        }
+
+        public override double GetPerimeter()
+        {
+            return Math.PI*(RadioMayor + RadioMenor);
         }
     }
 }

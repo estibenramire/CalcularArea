@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CalcularArea
 {
-    internal class Forma
+   public abstract class Forma2D
     {
-      
 
+        public abstract double GetArea();
+        public abstract double GetPerimeter();
 
 
     }
