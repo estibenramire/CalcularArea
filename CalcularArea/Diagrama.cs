@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalcularArea
 {
-    internal class Forma
+    internal class Diagrama
     {
-      
-
-
-
     }
 }

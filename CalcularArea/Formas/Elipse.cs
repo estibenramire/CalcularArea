@@ -16,7 +16,7 @@ namespace CalcularArea.Formas
             _radioMayor = radioMayor;
             _radioMenor = radioMenor;
         }
-        public double CalcularArea()
+        public double GetArea()
         {
             return Math.PI * _radioMayor * _radioMenor;
         }

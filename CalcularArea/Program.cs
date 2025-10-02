@@ -14,11 +14,11 @@ namespace CalcularArea
 
             Console.WriteLine("Cálculo de Rectángulo");
             Rectangulo rectangulo = new Rectangulo(4, 6);
-            Console.WriteLine($"El área del rectángulo es: {rectangulo.CalcularArea()}");
+            Console.WriteLine($"El área del rectángulo es: {rectangulo.GetArea()}");
 
             Console.WriteLine("Cálculo de Cuadrado");
             Cuadrado cuadrado= new Cuadrado(5);
-            Console.WriteLine($"El área del cuadrado es: {cuadrado.CalcularArea()}");
+            Console.WriteLine($"El área del cuadrado es: {cuadrado.GetArea()}");
 
           
 
@@ -28,11 +28,11 @@ namespace CalcularArea
 
             Console.WriteLine("Cálculo de Elipse");
             Elipse elipse = new Elipse(4, 6);
-            Console.WriteLine($"El área de la elipse es: {elipse.CalcularArea()}");
+            Console.WriteLine($"El área de la elipse es: {elipse.GetArea()}");
 
             Console.WriteLine("Cálculo de Círculo");
             Circulo circulo = new Circulo(3);
-            Console.WriteLine($"El área del círculo es: {circulo.CalcularArea()}");
+            Console.WriteLine($"El área del círculo es: {circulo.GetArea()}");
 
             Console.WriteLine("Cálculo de Triángulo");
             Triangulo triangulo = new Triangulo(4, 6);

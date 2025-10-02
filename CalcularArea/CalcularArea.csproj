@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Diagrama.cs" />
     <Compile Include="Forma.cs" />
     <Compile Include="Formas\Circulo.cs" />
     <Compile Include="Formas\Cuadrado.cs" />

@@ -12,7 +12,7 @@ namespace CalcularArea.Formas
         {
         }
 
-        public int CalcularArea()
+        public int GetArea()
         {
             return _base * _altura;
         }
